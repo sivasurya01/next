@@ -1,8 +1,6 @@
 "use client";
-import React, { useState, createContext } from "react";
-// import Mapvalue from "./Mapvalue";
-export const Valuecontext = createContext();
-export default function page() {
+import { useState } from "react";
+export default function Page() {
   const [value, setValue] = useState("");
   const [array, setArray] = useState([]);
   const addfunction = (e) => {
@@ -34,9 +32,6 @@ export default function page() {
       {/* {array.map((data) => {
         return <p>{data.title}</p>;
       })} */}
-      <Valuecontext.Provider value={array}>
-        {/* <Mapvalue /> */}
-      </Valuecontext.Provider>
     </>
   );
 }
