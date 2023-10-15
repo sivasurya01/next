@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, createContext } from "react";
-import Mapvalue from "./mapvalue";
+import Mapvalue from "./Mapvalue";
 export const Valuecontext = createContext();
 export default function page() {
   const [value, setValue] = useState("");
