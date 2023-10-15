@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, createContext } from "react";
-import Mapvalue from "./Mapvalue";
+// import Mapvalue from "./Mapvalue";
 export const Valuecontext = createContext();
 export default function page() {
   const [value, setValue] = useState("");
@@ -35,7 +35,7 @@ export default function page() {
         return <p>{data.title}</p>;
       })} */}
       <Valuecontext.Provider value={array}>
-        <Mapvalue />
+        {/* <Mapvalue /> */}
       </Valuecontext.Provider>
     </>
   );
